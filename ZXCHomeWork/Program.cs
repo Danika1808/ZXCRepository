@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ZXCHomeWork
 {
@@ -8,10 +8,11 @@ namespace ZXCHomeWork
         {
             var n = int.Parse(Console.ReadLine());
             var a = double.Parse(Console.ReadLine());
-            var nAngle = new NAngle(n, a);
-            Console.WriteLine($"Площадь равна = {nAngle.Square()}");
-            Console.WriteLine($"Периметр равен = {nAngle.Perimetr()}");
-            Console.WriteLine($"Угол n-угольника равен = {nAngle.Angle()}");
+            var nAngle = new NAngle(n,a);
+
+            Console.WriteLine($"Площадь равна = {nAngle.GetSquare()}");
+            Console.WriteLine($"Периметр равен = {nAngle.GetPerimetr()}");
+            Console.WriteLine($"Угол n-угольника равен = {nAngle.GetAngle()}");
         }
     }
 }
